@@ -144,9 +144,6 @@ function create ()
 {
     
     this.add.image(400,300,'sky');
-
-    helloButton.on('pointerover', () => { console.log('pointerover'); });
-
     platforms = setupEnvironment(this.physics,'ground')
     player = setupPlayer(this.physics,this.anims,100,450,'dude')
     stars = setupCollectables(this.physics,11)
